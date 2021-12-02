@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: arial;
+            font-size: 14px;
+            margin: 0 auto;
+            width: 80%;
+            margin-top: 10px;
+        }
+
+        .menu {
+            background-color: #060;
+            padding: 0;
+        }
+        .menu > ul{
+            list-style-type: none;
+        }
+        .menu ul li a{
+            text-decoration: none;
+            padding: 20px;
+        }
+        .menu li {
+            display: inline-block;
+            width: 100px;
+            background-color: #27ae60;
+            margin: 0;
+            padding: 17px 20px;
+            text-align: center;
+            height: 28px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color:#ffffff;
+            text-transform: uppercase;
+            
+        }
+
+        .menu li:hover {
+            background-color: #e67e22;
+            outline: solid aqua 3px;
+        }
+
+        .submenu {
+            display: none;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+            position: absolute;
+            padding: 30px;
+            margin-left: -50px;
+            float: left;
+        }
+
+        .submenu li {
+            display: block;
+            text-align: left;
+        }
+
+        .table {
+            border: 1px solid #666;
+            padding: 10px;
+            background-color: #ccc;
+            border-collapse: collapse;
+
+        }
+
+        .table td,
+        th {
+            border: 1px solid #666;
+            padding: 10px;
+        }
+
+        .table th {
+            background-color: #e67e22;
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gioi Thieu</a></li>
+            <li><a href="#">Thong Bao</a></li>
+            <li><a href="#">Tin Tuc</a>
+                <ul class="submenu">
+                    <li><a href="#">Thoi Su</a></li>
+                    <li><a href="#">TT</a></li>
+                    <li><a href="#">TT</a></li>
+                    <li><a href="#">TT</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Lien He</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>Hoa Don</h1>
+        <table class="table">
+            <tr>
+                <th>Hoa don</th>
+                <th>So luong</th>
+                <th>Thanh tien</th>
+            </tr>
+            <tr>
+                <td>Trung ga</td>
+                <td>10 Trung</td>
+                <td>15 000 d</td>
+            </tr>
+            <tr>
+                <td>Trung ga</td>
+                <td>10 Trung</td>
+                <td>15 000 d</td>
+            </tr>
+            <tr>
+                <td>Trung ga</td>
+                <td>10 Trung</td>
+                <td>15 000 d</td>
+            </tr>
+    </div>
+    
+</body>
+
+</html>
